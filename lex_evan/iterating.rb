@@ -70,6 +70,8 @@ blog_posts = [
 # called `tags`.
 
 
+tags = blog_posts.map { |post| post[:tags]}.flatten.uniq 
+
 
 # There shouldn't be any need to edit anything below this line
 
